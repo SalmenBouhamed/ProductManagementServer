@@ -39,7 +39,6 @@ public class ProdcutMockServiceImpl implements IProductService{
 
 	@Override
 	public void deleteProduct(String ref) {
-		System.out.print(ref);
 		Product product = new Product();
 		product.setRef(ref);
 		products.remove(product);
