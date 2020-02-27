@@ -6,8 +6,6 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.example.demo.entity.Product;
-
 @Service
 public class ProdcutMockServiceImpl implements IProductService{
 	
@@ -38,9 +36,9 @@ public class ProdcutMockServiceImpl implements IProductService{
 	}
 
 	@Override
-	public void deleteProduct(String ref) {
+	public void deleteProduct(Long id) {
 		Product product = new Product();
-		product.setRef(ref);
+		product.setId(id);
 		products.remove(product);
 	}
 
